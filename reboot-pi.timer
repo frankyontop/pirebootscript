@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer to reboot the system every 12 hours
+
+[Timer]
+OnBootSec=12h
+OnUnitActiveSec=12h
+Unit=reboot-pi.service
+
+[Install]
+WantedBy=timers.target

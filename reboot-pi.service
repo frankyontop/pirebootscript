@@ -1,0 +1,7 @@
+[Unit]
+Description=Reboot the system
+Documentation=man:reboot(8)
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/reboot
